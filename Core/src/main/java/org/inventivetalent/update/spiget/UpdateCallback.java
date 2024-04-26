@@ -46,4 +46,8 @@ public interface UpdateCallback {
 	 */
 	void upToDate();
 
+	/**
+	 * Called when update check is failed
+	 */
+	void updateCheckFailed();
 }

@@ -47,6 +47,7 @@ public abstract class SpigetUpdateAbstract {
 	protected final int    resourceId;
 	protected final String currentVersion;
 	protected final Logger log;
+	protected boolean debug = false;
 	protected String            userAgent         = "SpigetResourceUpdater";
 	protected VersionComparator versionComparator = VersionComparator.EQUAL;
 
@@ -70,6 +71,18 @@ public abstract class SpigetUpdateAbstract {
 	public SpigetUpdateAbstract setVersionComparator(VersionComparator comparator) {
 		this.versionComparator = comparator;
 		return this;
+	}
+
+	public boolean isDebug() {
+		return debug;
+	}
+
+	public void setDebug(boolean debug) {
+		this.debug = debug;
+	}
+
+	public void debug() {
+		this.debug = true;
 	}
 
 	public ResourceInfo getLatestResourceInfo() {
@@ -101,7 +114,8 @@ public abstract class SpigetUpdateAbstract {
 					callback.upToDate();
 				}
 			} catch (Exception e) {
-				log.log(Level.WARNING, "Failed to get resource info from spiget.org", e);
+				if (debug) log.log(Level.WARNING, "Failed to get resource info from spiget.org", e);
+				callback.updateCheckFailed();
 			}
 		});
 	}
