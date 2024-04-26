@@ -70,7 +70,7 @@ updater.checkForUpdate(new UpdateCallback() {
 </repositories>
 <dependencies>
     <dependency>
-        <groupId>org.inventivetalent.spiget-update</groupId>
+        <groupId>cc.happyareabean.spiget-update</groupId>
         <artifactId>bukkit|bungee</artifactId>
         <version>VERSION</version>
     </dependency>

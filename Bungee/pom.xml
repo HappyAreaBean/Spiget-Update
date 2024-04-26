@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>parent</artifactId>
-        <groupId>org.inventivetalent.spiget-update</groupId>
+        <groupId>cc.happyareabean.spiget-update</groupId>
         <version>parent-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -14,7 +14,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.inventivetalent.spiget-update</groupId>
+            <groupId>cc.happyareabean.spiget-update</groupId>
             <artifactId>core</artifactId>
             <version>${s-update.version}</version>
         </dependency>
