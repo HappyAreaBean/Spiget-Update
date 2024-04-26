@@ -33,6 +33,11 @@ public class UpdateTest {
 
 				fail("Resource is up-to-date, but should have an update");
 			}
+
+			@Override
+			public void updateCheckFailed() {
+				System.out.println("update-check-failed");
+			}
 		});
 	}
 
