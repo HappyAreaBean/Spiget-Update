@@ -64,8 +64,9 @@ updater.checkForUpdate(new UpdateCallback() {
 ```xml
 <repositories>
     <repository>
-        <id>inventive-repo</id>
-        <url>https://repo.inventivetalent.org/content/groups/public/</url>
+        <id>fantasyrealms-other-snapshots</id>
+        <name>Fantasy Realms Repository</name>
+        <url>https://repo.fantasyrealms.net/other-snapshots</url>
     </repository>
 </repositories>
 <dependencies>

@@ -70,12 +70,12 @@
 
     <distributionManagement>
         <repository>
-            <id>sonatype-nexus-releases</id>
-            <url>https://repo.inventivetalent.org/repository/maven-releases/</url>
+            <id>fantasyrealms-other-libraries</id>
+            <url>https://repo.fantasyrealms.net/other-libraries</url>
         </repository>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://repo.inventivetalent.org/repository/maven-snapshots/</url>
+            <id>fantasyrealms-other-snapshots</id>
+            <url>https://repo.fantasyrealms.net/other-snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
